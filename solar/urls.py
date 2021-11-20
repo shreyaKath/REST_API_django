@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from rest_framework.urlpatterns import format_suffix_patterns
+# from rest_framework.urlpatterns import format_suffix_patterns
 from userapp import views
 
 urlpatterns = [
@@ -23,4 +23,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/<int:pk>', views.UsersList.user_detail),
 ]
-urlpatterns = format_suffix_patterns(urlpatterns)
+# urlpatterns = format_suffix_patterns(urlpatterns)
